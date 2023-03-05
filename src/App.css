@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+
+
+:root{
+    --green: green;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+background-color:rgb(214, 248, 245);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+    height:50px;
+    box-shadow: 0px 2px #888888;
+    background-color:white;
+    display: grid;
+    place-items: center;
+}
+#pagenamecontainer{
+    width:70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li{
+    display: inline-block;
+    margin: 0 10px;
 }
 
-.App-link {
-  color: #61dafb;
+#searchbarcontainer{
+    display: grid;
+    place-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchbarsq{
+    width: 500px;
+    height: 120px;
+    box-shadow: 2px 2px #888888;
+    background-color:white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;/*reduces the number of divs I use*/
+
+}
+
+#inputcontainer{
+    display: grid;
+    place-items: center;
+}
+
+#cocktailtitlecontainer{
+    display: grid;
+    place-items: center;
+}
+
+#CocktTailLineupcontainer-container{
+    display: grid;
+    place-items: center;
+}
+
+
+#noresultmessage{
+    display: none;
+
+}
+
+
+
+.cocktaillineupcontainer{
+    display:grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-column-gap:15px;
+    grid-row-gap:30px;
+}/**/
+
+
+#cocktailsqr{
+
+    height: 400px;
+    width: 200px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px #888888;
+    
+}/**/
+
+img{
+    border-radius:5px 5px 0 0;
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+/**/
+#drinkname{
+    margin-bottom:0px; 
+    margin-left:10px;
+    font-size:20px;
+}
+#drinkglass{
+    margin:10px; 
+    font-size:16px;
+}
+#drinkcontent{
+    margin:10px; 
+}
+
+
+/*#btnContainer {
+    display: grid;
+    place-items: center;
+}*/
+
+#detailbtn{
+    margin-left:10px;
+    height: 20px;
+    width: 50px;
+    background-color:var(--green);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#drinkdetail_larger{
+    display: grid;
+    place-items: center;
+}
+
+#boximageNparagraph{
+    display: flex;
+    align-items: center;
+}
+#boxImg{
+    
+}
+
+#boxP{
+    flex:2;
+}
+#img_detail{
+   margin-left: 25px;
+}
+
+p{
+    line-height:35px
+    
+}
+
+.cocktailinfotitle{
+
+    background-color: rgb(122, 194, 132);
+    border-radius: 3px;
+    margin-left: 25px;
+
+}
+
+.cocktailinfotitleResults{
+    margin-left: 10px;
+    background-color: greenyellow;
+    text-indent: 10px;
+    
+}
+
+#btnContainer_detail{
+    display: grid;
+    place-items: center;
+    
+}
+
+#backhomebtn{
+    color:white;
+    background-color:var(--green);
+    height:20px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+table{
+    border: 1px;
 }
